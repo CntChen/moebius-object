@@ -9,7 +9,7 @@ gulp.task('test', function() {
     ].join(' && ');
   exec(shellCommands, (error, stdout, stderr) => {
     if (error) {
-      console.error(`exec error:\${error}`);
+      console.error(`exec error:\n${error}`);
       return;
     }
     
