@@ -4,12 +4,17 @@
  * @Desc   A fractal javascript object always return itself
  */
 
-let origin = {};
-let handler = {
+let FractalObject;
+
+const handler = {
   get: (target, name) => {
-    return target;
+    return FractalObject;
   },
 }
+
+const origin = function() {
+  return FractalObject;
+};
 
 FractalObject = new Proxy(origin, handler);
 
