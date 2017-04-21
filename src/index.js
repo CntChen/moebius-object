@@ -1,22 +1,22 @@
 /**
  * @Author CntChen
  * @Date   2017-04-21
- * @Desc   A fractal javascript object always return itself
+ * @Desc   A javascript object always return itself
  */
 
-let FractalObject;
+let MoebiusObject;
 
 const handler = {
   get: (target, name) => {
-    return FractalObject;
+    return MoebiusObject;
   },
 }
 
 const origin = function() {
-  return FractalObject;
+  return MoebiusObject;
 };
 
-FractalObject = new Proxy(origin, handler);
+MoebiusObject = new Proxy(origin, handler);
 
 
-module.exports = FractalObject;
+module.exports = MoebiusObject;

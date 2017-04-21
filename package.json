@@ -1,5 +1,11 @@
-{
+{ 
+  "name": "moebius-object",
+  "descreption": "A javascript object always return itself",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "CntChen",
   "dependencies": {
     "gulp": "^3.9.1"
-  }
+  },
+  "license": "MIT"
 }
